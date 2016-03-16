@@ -117,27 +117,27 @@ class UITests: UITestCase {
         XCTAssertLessThanOrEqual(joeButton.frame.maxY, brianButton.frame.minY)
     }
 
-    func testTextExistsInAWebView() {
-        app.buttons["More Info"].tap()
-
-        let volleyballLabel = app.staticTexts["Volleyball"]
-        waitForElementToAppear(volleyballLabel)
-        XCTAssert(volleyballLabel.exists)
-    }
-
-    func testTappingALinkInAWebView() {
-        app.buttons["More Info"].tap()
-
-        let disambiguationLink = app.links["Volleyball (disambiguation)"]
-        waitForElementToAppear(disambiguationLink)
-        XCTAssert(disambiguationLink.exists)
-
-        disambiguationLink.tap()
-
-        let volleyballLink = app.links["Volleyball (ball)"]
-        waitForElementToAppear(volleyballLink)
-        XCTAssert(volleyballLink.exists)
-    }
+//    func testTextExistsInAWebView() {
+//        app.buttons["More Info"].tap()
+//
+//        let volleyballLabel = app.staticTexts["Volleyball"]
+//        waitForElementToAppear(volleyballLabel)
+//        XCTAssert(volleyballLabel.exists)
+//    }
+//
+//    func testTappingALinkInAWebView() {
+//        app.buttons["More Info"].tap()
+//
+//        let disambiguationLink = app.links["Volleyball (disambiguation)"]
+//        waitForElementToAppear(disambiguationLink)
+//        XCTAssert(disambiguationLink.exists)
+//
+//        disambiguationLink.tap()
+//
+//        let volleyballLink = app.links["Volleyball (ball)"]
+//        waitForElementToAppear(volleyballLink)
+//        XCTAssert(volleyballLink.exists)
+//    }
 
     func testPushingAController() {
         app.buttons["More Info"].tap()

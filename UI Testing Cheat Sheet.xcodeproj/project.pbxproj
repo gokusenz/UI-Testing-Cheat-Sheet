@@ -168,7 +168,7 @@
 					};
 					84E1B44A1B9DC34200453BB1 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = UZ7CKQ6UYU;
+						DevelopmentTeam = Y9ZD22AU7N;
 						TestTargetID = 84E1B4361B9DC34200453BB1;
 					};
 				};
@@ -372,6 +372,8 @@
 		84E1B4581B9DC34200453BB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.masilotti.UI-Testing-Cheat-SheetUITests";
@@ -385,6 +387,8 @@
 		84E1B4591B9DC34200453BB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.masilotti.UI-Testing-Cheat-SheetUITests";
